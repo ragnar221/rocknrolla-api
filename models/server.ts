@@ -17,7 +17,7 @@ export class Server {
         this.app=express();
         this.port= process.env.PORT
         this.authPath= '/auth'
-        this.ordersPath= '/checkout'
+        this.ordersPath= '/orders'
         this.issuesPath='/issues'
 
         this.conectarDB();
