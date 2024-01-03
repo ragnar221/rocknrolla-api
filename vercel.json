@@ -4,18 +4,6 @@
         "src": "app.ts",
         "use": "@vercel/node"
     }],
-    
-        "headers": [
-            {
-                "source":"api/(./*)",
-                "headers": [
-                    {"key": "Access-control-allow-credentials", "value": "true"},
-                    {"key": "Access-control-allow-origin","value":"true"}
-                ]
-            }
-        ],
-    
-
     "routes": [
         {
             "src": "/(.*)",
