@@ -10,8 +10,8 @@ const router = Router();
 router.get("/",[validarJWT, recolectarErrores], getOrdenes)
 
 router.post("/", [
-    validarJWT,
-    //isVerified,
+    //validarJWT,
+    isVerified,
     check("price", "el precio es obligatorio").not().isEmpty(),
     check("shippingCost", "el costo de envio es obligatorio").not().isEmpty(),
     check("total", "el total es obligatorio").not().isEmpty(),
