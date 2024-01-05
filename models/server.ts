@@ -38,8 +38,8 @@ export class Server {
 
     routes():void {
         this.app.use(this.authPath, authRoutes);
-        this.app.use(this.ordersPath, orderRoutes);
-        this.app.use(this.issuesPath, issuesRoutes)
+        this.app.use(this.ordersPath, orderRoutes)
+        this.app.use(this.issuesPath, issuesRoutes);
     }
 
     listen(): void {
