@@ -22,7 +22,7 @@ const orderSchema = new mongoose_1.Schema({
     },
     items: {
         type: [{
-                desc: {
+                img: {
                     type: String,
                     required: true
                 },
@@ -38,7 +38,7 @@ const orderSchema = new mongoose_1.Schema({
                     type: Number,
                     required: true
                 },
-                title: {
+                name: {
                     type: String,
                     required: true
                 },
